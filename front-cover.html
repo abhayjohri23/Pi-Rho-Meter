@@ -2,16 +2,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scientific Calculator</title>
-    <link rel="styling-utils" href="utils.css" >
-    <link rel="styling-basic" href="basicUtils.css">
+    <title>πρmeteR</title>
+    <link rel="stylesheet" type="text/css" href="utils.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <header>
-        Creating our first project - A calculator!
-    </header>
-    <div id="firstDiv">
-        This is a div
+<body style="background-color: rgb(250, 230, 158);">
+    <div>
+        <div class="centre-div">
+            <h1>πρmeteR : A Scientific Calculator</h1>
+        </div>
+        <div class="centre-div">
+            <input id="text-display" type="text">
+            <div class="row">
+                <button class="numberBtn">C</button>
+                <button class="numberBtn">%</button>
+                <button class="numberBtn">÷</button>
+                <button class="numberBtn">⬅</button>
+            </div>
+            <div class="row">
+                <button class="numberBtn">7</button>
+                <button class="numberBtn">8</button>
+                <button class="numberBtn">9</button>
+                <button class="numberBtn">x</button>
+            </div>
+            <div class="row">
+                <button class="numberBtn">4</button>
+                <button class="numberBtn">5</button>
+                <button class="numberBtn">6</button>
+                <button class="numberBtn">-</button>
+            </div>
+            <div class="row">
+                <button class="numberBtn">1</button>
+                <button class="numberBtn">2</button>
+                <button class="numberBtn">3</button>
+                <button class="numberBtn">+</button>
+            </div>
+            <div class="row">
+                <button class="close-page"><i class="fa fa-home"></i></button>
+                <button class="numberBtn">0</button>
+                <button class="numberBtn">.</button>
+                <button class="numberBtn">=</button>
+            </div>
+        </div>   
     </div>
+    <script src="logic.js"></script>
 </body>
 </html>
