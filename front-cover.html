@@ -6,13 +6,28 @@
     <link rel="stylesheet" type="text/css" href="utils.css" >
     <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
-<body style="background-color: rgb(250, 230, 158);">
-    <div>
-        <div class="centre-div">
-            <h1>πρmeteR : A Scientific Calculator</h1>
-        </div>
-        <div class="centre-div">
+<body style="background-color: white; margin: 0%;">
+    <header>
+        <nav id="nav">
+            <a href="#" style="color: rgb(149, 149, 149); text-decoration: none; font-size: 30px;">πρmeteR</a>
+            <div class="centre-links">
+                <button class="dropbtn nav-links">Math Tools 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <button class="dropbtn nav-links">Classroom 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <button class="dropbtn nav-links">Resources 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+            <a class="nav-links" href="#">Login</a>
+        </nav>
+    </header>
+    <div id="container">
+        <div>
             <input id="text-display" type="text">
             <div class="row">
                 <button class="numberBtn">C</button>
@@ -47,5 +62,12 @@
         </div>   
     </div>
     <script src="logic.js"></script>
+    <footer style="position: fixed; bottom: 1rem; left: 38.5%">
+        <a class="footer-links" href="#">Terms of Service</a>
+        <p class="footer-links" style="display: inline;">|</p>
+        <a class="footer-links" href="#">Privacy Policy</a>
+        <p class="footer-links" style="display: inline;">|</p>
+        <a class="footer-links" href="#">Help</a>
+    </footer>
 </body>
 </html>
