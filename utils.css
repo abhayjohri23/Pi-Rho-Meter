@@ -96,7 +96,7 @@ h1 {
     cursor: pointer;
   }
 
-  .printBtn {
+  #printBtn {
     border: none;
     outline: none;
     font-size: 15px;

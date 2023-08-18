@@ -24,14 +24,16 @@ Array.from(buttons).forEach((button)=>{
         else{
             if(currVal === 'x')                     value = value + '*';
             else if(currVal === '÷')                value = value + '/';
-            else                                    value = value + event.target.innerHTML.toString();
+            else{
+                // console.log(typeof value);
+                if(event.target.getAttribute("class").includes("pi-btn"))            
+                    value = value + ((value.length>0) ? "*" :"") + Math.PI;
+                else                                                                    
+                    value = value + event.target.innerHTML.toString();
+            }                                    
 
             document.getElementById('text-display').value = value;
         }
     });
-
-    document.querySelector('.close-page').addEventListener('click', e => {
-        window.close();
-
-    });
 });
+
