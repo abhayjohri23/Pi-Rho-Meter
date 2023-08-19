@@ -7,10 +7,10 @@ Array.from(buttons).forEach((button)=>{
         var currVal = event.target.innerHTML.toString();
         if(currVal === '='){
             try{
-                value = eval(value);
+                value = eval(value).toString();
                 document.getElementById('text-display').value = value; 
             }catch(e){
-                console.log('Couldnt evaluate!')
+                console.log('Couldnt evaluate!');
             }
         }
         else if(currVal === 'C'){
@@ -25,7 +25,6 @@ Array.from(buttons).forEach((button)=>{
             if(currVal === 'x')                     value = value + '*';
             else if(currVal === '÷')                value = value + '/';
             else{
-                // console.log(typeof value);
                 if(event.target.getAttribute("class").includes("pi-btn"))            
                     value = value + ((value.length>0) ? "*" :"") + Math.PI;
                 else                                                                    

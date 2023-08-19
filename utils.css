@@ -1,14 +1,16 @@
 h1 {
     font-size: 34px;
     color: #36161d;
-    font-family: 'Indie Flower', cursive;;
+    font-family: 'Indie Flower', cursive;
     font-style: normal;
 }
 
 .centre-links{
-    display: inline-block;
-    margin-left: 27%;
-    margin-right: 31%;
+    display: inline;
+    float: left;
+    position: absolute;
+    left: 37%;
+    right: 25%;
 }
 
 .numberBtn{
@@ -52,6 +54,7 @@ h1 {
     width: fit-content;
     margin-left: 35%;
     margin-top: 10%;
+    clear: both;
 }
 
 .nav-links{
@@ -70,6 +73,7 @@ h1 {
     background-color: rgb(247,247,247); 
     padding: 0.5rem;
     padding-bottom: 0.4rem;
+    overflow: hidden;
 }
 
 .footer-links{
@@ -105,15 +109,21 @@ h1 {
     font-family: inherit;
     margin: 0;
     cursor: pointer;
+    float: right;
   }
 
   #main-icon {
+    float: left;
     color: rgb(149, 149, 149); 
     text-decoration: none; 
     font-size: 30px;
   }
 
   #main-icon:hover {
-    color: rgb(142, 140, 140);
+    color: rgb(120, 113, 113);
+  }
+
+  #container .history {
+    max-height: 5rem;
   }
   
