@@ -25,18 +25,6 @@ h1 {
     background-color: whitesmoke;
 }
 
-.close-page{
-    margin: 0.4rem 0.2rem;
-    padding: 0.6rem;
-    font-size: 1rem;
-    border: 0.05rem solid black;
-    border-radius: 0.7rem;
-    cursor:grab;
-    display: inline-block;
-    width: 5.5rem;
-    background-color: whitesmoke;
-}
-
 #text-display {
     padding: 0.6rem;
     font-size: 20px;
@@ -50,10 +38,11 @@ h1 {
 
 #container{
     border: 1px solid black;
+    border-radius: 0.5rem;
     text-align: center;
     width: fit-content;
     margin-left: 35%;
-    margin-top: 10%;
+    margin-top: 5%;
     clear: both;
 }
 
@@ -124,6 +113,11 @@ h1 {
   }
 
   #container .history {
-    max-height: 5rem;
+    height: 9rem;
+    border-radius: 0.5rem;
+    border-color: black;
+    border-width: 0.01rem;
+    border-style: solid;
+    margin: 0.3rem;
   }
   

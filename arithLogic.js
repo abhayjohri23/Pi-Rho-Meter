@@ -1,5 +1,5 @@
 let value = "";
-console.log("Javascript");
+console.log("Arithmetic Javascript");
 let buttons = document.querySelectorAll('.numberBtn');
 
 Array.from(buttons).forEach((button)=>{
@@ -18,7 +18,8 @@ Array.from(buttons).forEach((button)=>{
             document.getElementById('text-display').value = value;
         }
         else if(currVal === '⬅'){
-            value = value.substring(0,value.length()-1);  
+            value = value.substring(0,value.length-1);
+            console.log(value);  
             document.getElementById('text-display').value = value;
         } 
         else{
