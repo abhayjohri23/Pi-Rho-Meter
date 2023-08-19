@@ -2,9 +2,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>πρmeteR | World of Calculators</title>
+    <link rel="icon" href=".\images\171352_calculator_icon.png" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="utils.css" >
+    <link rel="stylesheet" type="text/css" href="displayUtils.css" >
+
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
-<body>
-    
+<body style="background-color: white; margin: 0%;">
+    <header>
+        <nav id="nav">
+            <a href="E:/JavaScript Projects/pi-rho-meter/front-cover.html" id="main-icon">πρmeteR</a>
+            <div class="centre-links">
+                <button class="dropbtn nav-links">Math Tools 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <button class="dropbtn nav-links">Classroom 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <button class="dropbtn nav-links">Resources 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+            <button id="printBtn" onclick="window.print()"><iconify-icon icon="mingcute:print-line"></iconify-icon></button>
+            <button class="dropbtn nav-links" style="float: right; font-size: 16px;">Login
+            </button>
+        </nav>
+    </header>
+    <div id="tile-container">
+        <div id="tile1" class="tiles">
+            Div1
+        </div>
+        <div id="tile2" class="tiles">
+            Div2           
+        </div>
+        <div id="tile3" class="tiles">
+            Div3
+        </div>
+        <div id="tile4" class="tiles">
+            Div4
+        </div>
+        <div id="tile5" class="tiles">
+            Div5
+        </div>
+        <div id="tile6" class="tiles">
+            Div6
+        </div>
+    </div>
+    <script src="trigoLogic.js"></script>
+    <footer style="position: fixed; bottom: 1rem; left: 38.5%">
+        <a class="footer-links" href="#">Terms of Service</a>
+        <p class="footer-links" style="display: inline;">|</p>
+        <a class="footer-links" href="#">Privacy Policy</a>
+        <p class="footer-links" style="display: inline;">|</p>
+        <a class="footer-links" href="#">Help</a>
+    </footer>
 </body>
 </html>

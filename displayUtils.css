@@ -1,0 +1,21 @@
+div.tiles {
+    display: inline;
+    width: 390px;
+    height: 200px;
+    background-color: rgb(251, 249, 249); 
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.02rem solid lightgray;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+#tile-container {
+    /* background-color: aqua; */
+    height: 70%;
+    margin: 40px 40px;
+    padding: 20px;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-around;
+}
