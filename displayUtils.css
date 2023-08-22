@@ -8,6 +8,7 @@ div.tiles {
     border: 0.02rem solid lightgray;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.025);
     padding: 0.1rem;
+    overflow: hidden;
 }
 
 #tile-container {
@@ -23,7 +24,7 @@ div.tiles {
 
 .text-admt {
     display: inline-block !important;
-    width: 18rem !important;
+    width: 14rem !important;
     border: 0.05rem solid rgb(178, 168, 168) !important;
 }
 
@@ -40,4 +41,15 @@ label.output{
     border-radius: 0.5rem;
     width: 18rem;
     height: 2.3rem;
+}
+
+.refresh-button {
+    border: none !important;
+    outline: none !important;
+    font-size: 15px;
+    padding: 14px 16px !important;
+    background-color: inherit !important;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
 }

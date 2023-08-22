@@ -40,9 +40,6 @@ h1 {
     border: 1px solid black;
     border-radius: 0.5rem;
     text-align: center;
-    width: fit-content;
-    margin-left: 35%;
-    margin-top: 5%;
     clear: both;
 }
 
@@ -121,3 +118,36 @@ h1 {
     margin: 0.3rem;
   }
   
+  .dropdown-links {
+    display: none;
+    position: absolute;
+    left: 0.9rem;
+    background-color: rgb(247,247,247); 
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-links a {
+    font-family: 'EB Garamond',serif;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+    color: rgb(120, 113, 113);
+    float: none;
+    text-align: left;
+  }
+
+  .dropdown-links a:hover {
+    color: rgb(53, 49, 49);
+    text-decoration: underline;
+  }
+
+  #dropdown1 {
+    float: left;
+  }
+
+  div#dropdown1:hover .dropdown-links {
+    display: block;
+  }

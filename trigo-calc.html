@@ -11,20 +11,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0" />
 </head>
 <body style="background-color: white; margin: 0%;">
     <header>
         <nav id="nav">
             <a href="E:/JavaScript Projects/pi-rho-meter/front-cover.html" id="main-icon">πρmeteR</a>
             <div class="centre-links">
-                <button class="dropbtn nav-links">Math Tools 
-                    <i class="fa fa-caret-down"></i>
+                <div id="dropdown1" style="display: inline;">
+                    <button class="dropbtn nav-links">Math Tools 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-links">
+                        <a href="front-cover.html">Arithmetic Calculator</a>
+                        <a href="#">Quadratic Equation Calculator</a>
+                        <a href="trigo-calc.html">Trigonomtery Calculator</a>
+                    </div>
+                </div>
+                <button class="dropbtn nav-links">Classroom
                 </button>
-                <button class="dropbtn nav-links">Classroom 
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <button class="dropbtn nav-links">Resources 
-                    <i class="fa fa-caret-down"></i>
+                <button class="dropbtn nav-links">Resources
                 </button>
             </div>
             <button id="printBtn" onclick="window.print()"><iconify-icon icon="mingcute:print-line"></iconify-icon></button>
@@ -37,9 +43,14 @@
             <section id="input1" style="display: flex; ">
                 <label for="text-display" style="font-size: 20px; display: inline-block; width: 2rem; margin: 0.5rem 1.1rem; font-family: 'EB Garamond', serif; color: rgb(127, 135, 142);"> α = </label>
                 <input id="text-display" class="text-admt" type="text">
+                <button class="refresh-button" style="position: relative; top: -4px; left: -4px;">
+                    <span class="material-symbols-outlined">
+                        refresh
+                    </span>
+                </button>
             </section>
             <section id="output1" style="display: flex;">
-                <h3 class="descr">sin α°</h3>
+                <h3 class="descr">sin α</h3>
                 <label for="descr" class="output"></label>
             </section>
             <div style="width: fit-content;">
@@ -50,9 +61,14 @@
             <section id="input2" style="display: flex; ">
                 <label for="text-display" style="font-size: 20px; display: inline-block; width: 2rem; margin: 0.5rem 1.1rem; font-family: 'EB Garamond', serif; color: rgb(127, 135, 142);"> α = </label>
                 <input id="text-display" class="text-admt" type="text">
+                <button class="refresh-button" style="position: relative; top: -4px; left: -4px;">
+                    <span class="material-symbols-outlined">
+                        refresh
+                    </span>
+                </button>
             </section>
             <section id="output2" style="display: flex;">
-                <h3 class="descr">cos α°</h3>
+                <h3 class="descr">cos α</h3>
                 <label for="descr" class="output"></label>
             </section>
             <div style="width: fit-content;">
@@ -63,57 +79,77 @@
             <section id="input1" style="display: flex; ">
                 <label for="text-display" style="font-size: 20px; display: inline-block; width: 2rem; margin: 0.5rem 1.1rem; font-family: 'EB Garamond', serif; color: rgb(127, 135, 142);"> α = </label>
                 <input id="text-display" class="text-admt" type="text">
+                <button class="refresh-button" style="position: relative; top: -4px; left: -4px;">
+                    <span class="material-symbols-outlined">
+                        refresh
+                    </span>
+                </button>
             </section>
             <section id="output1" style="display: flex;">
-                <h3 class="descr">tan α°</h3>
+                <h3 class="descr">tan α</h3>
                 <label for="descr" class="output"></label>
             </section>
             <div style="overflow: hidden;">
-                <embed src="images\Tan_proportional.svg" width="100%" height="100%" style="height: 190px; width: 330px; margin:5px 40px;">
+                <embed src="images\Tan_proportional.svg" width="100%" height="100%" style="height: 200px; width: 300px; margin:5px 40px; position: relative; top: -46px;">
             </div>
         </div>
         <div id="tile4" class="tiles">
             <section id="input1" style="display: flex; ">
                 <label for="text-display" style="font-size: 20px; display: inline-block; width: 2rem; margin: 0.5rem 1.1rem; font-family: 'EB Garamond', serif; color: rgb(127, 135, 142);"> α = </label>
                 <input id="text-display" class="text-admt" type="text">
+                <button class="refresh-button" style="position: relative; top: -4px; left: -4px;">
+                    <span class="material-symbols-outlined">
+                        refresh
+                    </span>
+                </button>
             </section>
             <section id="output1" style="display: flex;">
-                <h3 class="descr">csc α°</h3>
+                <h3 class="descr">csc α</h3>
                 <label for="descr" class="output"></label>
             </section>
-            <div style="width: fit-content;">
-                <embed src="images\Cosec_proportional.svg" width="100%" height="100%" style="height: 190px; width: 330px; margin:5px 40px;">
+            <div style="overflow: hidden;">
+                <embed src="images\Cosec_proportional.svg" width="100%" height="100%" style="height: 200px; width: 300px; margin:5px 40px; position: relative; top: -46px;">
             </div>
         </div>
         <div id="tile5" class="tiles">
             <section id="input1" style="display: flex; ">
                 <label for="text-display" style="font-size: 20px; display: inline-block; width: 2rem; margin: 0.5rem 1.1rem; font-family: 'EB Garamond', serif; color: rgb(127, 135, 142);"> α = </label>
                 <input id="text-display" class="text-admt" type="text">
+                <button class="refresh-button" style="position: relative; top: -4px; left: -4px;">
+                    <span class="material-symbols-outlined">
+                        refresh
+                    </span>
+                </button>
             </section>
             <section id="output1" style="display: flex;">
-                <h3 class="descr">sec α°</h3>
+                <h3 class="descr">sec α</h3>
                 <label for="descr" class="output"></label>
             </section>
-            <div style="width: fit-content;">
-                <embed src="images\secant-graph.webp" width="100%" height="100%" style="height: 190px; width: 330px; margin:5px 40px;">
+            <div style="overflow: hidden;">
+                <embed src="images\secant-graph.webp" width="100%" height="100%" style="height: 200px; width: 300px; margin:5px 40px; position: relative; top: -46px;">
             </div>
         </div>
         <div id="tile6" class="tiles">
             <section id="input1" style="display: flex; ">
                 <label for="text-display" style="font-size: 20px; display: inline-block; width: 2rem; margin: 0.5rem 1.1rem; font-family: 'EB Garamond', serif; color: rgb(127, 135, 142);"> α = </label>
                 <input id="text-display" class="text-admt" type="text">
+                <button class="refresh-button" style="position: relative; top: -4px; left: -4px;">
+                    <span class="material-symbols-outlined">
+                        refresh
+                    </span>
+                </button>
             </section>
             <section id="output1" style="display: flex;">
-                <h3 class="descr">cot α°</h3>
+                <h3 class="descr">cot α</h3>
                 <label for="descr" class="output"></label>
             </section>
-            <div style="width: fit-content;">
-                <embed src="images\Cotan_proportional.svg" width="100%" height="100%" style="height: 190px; width: 330px; margin:5px 40px;">
+            <div style="overflow: hidden;">
+                <embed src="images\Cotan_proportional.svg" width="100%" height="100%" style="height: 185px; width: 300px; margin:5px 40px; position: relative; top: -46px;">
             </div>
         </div>
     </div>
     <script src="trigoLogic.js"></script>
-    <footer style="position: fixed; bottom: 1rem; left: 38.5%">
+    <footer style="display: flex; justify-content: center; position: fixed; bottom: 1rem; left: 38.5%">
         <a class="footer-links" href="#">Terms of Service</a>
         <p class="footer-links" style="display: inline;">|</p>
         <a class="footer-links" href="#">Privacy Policy</a>

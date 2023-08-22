@@ -14,14 +14,19 @@
         <nav id="nav">
             <a href="E:/JavaScript Projects/pi-rho-meter/front-cover.html" id="main-icon">πρmeteR</a>
             <div class="centre-links">
-                <button class="dropbtn nav-links">Math Tools 
-                    <i class="fa fa-caret-down"></i>
+                <div id="dropdown1" style="display: inline;">
+                    <button class="dropbtn nav-links">Math Tools 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-links">
+                        <a href="front-cover.html">Arithmetic Calculator</a>
+                        <a href="#">Quadratic Equation Calculator</a>
+                        <a href="trigo-calc.html">Trigo Calculator</a>
+                    </div>
+                </div>
+                <button class="dropbtn nav-links">Classroom
                 </button>
-                <button class="dropbtn nav-links">Classroom 
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <button class="dropbtn nav-links">Resources 
-                    <i class="fa fa-caret-down"></i>
+                <button class="dropbtn nav-links">Resources
                 </button>
             </div>
             <button id="printBtn" onclick="window.print()"><iconify-icon icon="mingcute:print-line"></iconify-icon></button>
@@ -29,45 +34,47 @@
             </button>
         </nav>
     </header>
-    <div id="container">
-        <div class="history">
+    <section id="maincontent" style="display: flex; justify-content: center; align-self: center; margin-top: 5% ;">
+        <div id="container">
+            <div class="history">
+            </div>
+            <div>
+                <input id="text-display" type="text">
+                <div class="row">
+                    <button class="numberBtn">C</button>
+                    <button class="numberBtn">%</button>
+                    <button class="numberBtn">÷</button>
+                    <button class="numberBtn">⬅</button>
+                </div>
+                <div class="row">
+                    <button class="numberBtn">7</button>
+                    <button class="numberBtn">8</button>
+                    <button class="numberBtn">9</button>
+                    <button class="numberBtn">x</button>
+                </div>
+                <div class="row">
+                    <button class="numberBtn">4</button>
+                    <button class="numberBtn">5</button>
+                    <button class="numberBtn">6</button>
+                    <button class="numberBtn">-</button>
+                </div>
+                <div class="row">
+                    <button class="numberBtn">1</button>
+                    <button class="numberBtn">2</button>
+                    <button class="numberBtn">3</button>
+                    <button class="numberBtn">+</button>
+                </div>
+                <div class="row">
+                    <button class="numberBtn pi-btn"><iconify-icon icon="mdi:pi"></iconify-icon></button>
+                    <button class="numberBtn">0</button>
+                    <button class="numberBtn">.</button>
+                    <button class="numberBtn">=</button>
+                </div>
+            </div>   
         </div>
-        <div>
-            <input id="text-display" type="text">
-            <div class="row">
-                <button class="numberBtn">C</button>
-                <button class="numberBtn">%</button>
-                <button class="numberBtn">÷</button>
-                <button class="numberBtn">⬅</button>
-            </div>
-            <div class="row">
-                <button class="numberBtn">7</button>
-                <button class="numberBtn">8</button>
-                <button class="numberBtn">9</button>
-                <button class="numberBtn">x</button>
-            </div>
-            <div class="row">
-                <button class="numberBtn">4</button>
-                <button class="numberBtn">5</button>
-                <button class="numberBtn">6</button>
-                <button class="numberBtn">-</button>
-            </div>
-            <div class="row">
-                <button class="numberBtn">1</button>
-                <button class="numberBtn">2</button>
-                <button class="numberBtn">3</button>
-                <button class="numberBtn">+</button>
-            </div>
-            <div class="row">
-                <button class="numberBtn pi-btn"><iconify-icon icon="mdi:pi"></iconify-icon></button>
-                <button class="numberBtn">0</button>
-                <button class="numberBtn">.</button>
-                <button class="numberBtn">=</button>
-            </div>
-        </div>   
-    </div>
-    <script src="arithLogic.js"></script>
-    <footer style="position: fixed; bottom: 1rem; left: 38.5%">
+        <script src="arithLogic.js"></script>
+    </section>
+    <footer style="display: flex; justify-content: center; position: fixed; bottom: 1rem; left: 38.5%">
         <a class="footer-links" href="#">Terms of Service</a>
         <p class="footer-links" style="display: inline;">|</p>
         <a class="footer-links" href="#">Privacy Policy</a>
