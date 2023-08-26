@@ -44,9 +44,9 @@ h1 {
 
 .nav-links{
     color: rgb(127, 135, 142);
-    font-size: 15px;
+    font-size: 16px !important;
     text-decoration: none;
-    font-family: 'EB Garamond',serif;
+    font-family: 'EB Garamond',serif !important;
     margin: 0.5rem;
 }
 
