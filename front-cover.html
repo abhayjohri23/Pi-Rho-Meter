@@ -11,30 +11,28 @@
 </head>
 <body style="background-color: white; margin: 0%;">
     <header>
-        <nav id="nav">
-            <a href="E:/JavaScript Projects/pi-rho-meter/front-cover.html" id="main-icon">πρmeteR</a>
-            <div class="centre-links">
+        <nav id="nav" style="display: flex; justify-content:space-between; overflow: hidden;">
+            <a href="E:/JavaScript Projects/pi-rho-meter/front-cover.html" id="main-icon" style="display: flex; align-items: flex-start;">πρmeteR</a>
+            <div id="central-buttons" style="display: flex; align-items: center;">
                 <div id="dropdown1" style="display: inline;">
                     <button class="dropbtn nav-links">Math Tools 
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-links">
                         <a href="front-cover.html">Arithmetic Calculator</a>
-                        <!-- <a href="#">Quadratic Equation Calculator</a> -->
-                        <a href="trigo-calc.html">Trigo Calculator</a>
+                        <a href="trigo-calc.html">Trigonomtery Calculator</a>
                     </div>
                 </div>
-                <button class="dropbtn nav-links">Classroom
-                </button>
-                <button class="dropbtn nav-links">Resources
-                </button>
+                <button class="dropbtn nav-links">Classroom</button>
+                <button class="dropbtn nav-links">Resources</button>
             </div>
-            <button id="printBtn" onclick="window.print()"><iconify-icon icon="mingcute:print-line"></iconify-icon></button>
-            <button class="dropbtn nav-links" style="float: right; font-size: 16px;">Login
-            </button>
+            <div style="display: flex; align-items: end;">
+                <button class="dropbtn nav-links" style="font-size: 16px;">Login</button>
+                <button id="printBtn" onclick="window.print()"><iconify-icon icon="mingcute:print-line"></iconify-icon></button>
+            </div>
         </nav>
     </header>
-    <section id="maincontent" style="display: flex; justify-content: center; align-self: center; margin-top: 5% ;">
+    <section id="maincontent" style="display: flex; flex-direction: column; justify-content: space-around; align-items: center; align-content: center; margin-top: 5%;">
         <div id="container">
             <div class="history">
             </div>
