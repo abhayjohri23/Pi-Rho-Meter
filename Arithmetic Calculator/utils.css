@@ -1,0 +1,146 @@
+h1 {
+    font-size: 34px;
+    color: #36161d;
+    font-family: 'Indie Flower', cursive;
+    font-style: normal;
+}
+
+/* .centre-links{
+    display: inline;
+    float: left;
+    position: absolute;
+    left: 37%;
+    right: 25%;
+} */
+
+.numberBtn{
+    margin: 0.4rem 0.2rem;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 0.05rem solid black;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    display: inline-block;
+    width: 5.5rem;
+    background-color: whitesmoke;
+}
+
+#text-display {
+    padding: 0.6rem;
+    font-size: 20px;
+    width: 24rem;
+    border-radius: 0.5rem;
+    border-color: lightgray;
+    height: 2.3rem;
+    text-align: right;
+    margin: 0.3rem;
+}
+
+#container{
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.nav-links{
+    color: rgb(127, 135, 142);
+    font-size: 16px !important;
+    text-decoration: none;
+    font-family: 'EB Garamond',serif !important;
+    margin: 0.5rem;
+}
+
+.nav-links:hover{
+    color: black;
+}
+
+#nav{
+    background-color: rgb(247,247,247); 
+    padding: 0.5rem;
+    padding-bottom: 0.4rem;
+    overflow: hidden;
+}
+
+.footer-links{
+    color: rgb(127, 135, 142);
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'EB Garamond',serif;
+    margin: 0.5rem;
+}
+
+.footer-links:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.dropbtn {
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  #printBtn {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  #main-icon {
+    float: left;
+    color: rgb(149, 149, 149); 
+    text-decoration: none; 
+    font-size: 30px;
+  }
+
+  #main-icon:hover {
+    color: rgb(120, 113, 113);
+  }
+
+  #container .history {
+    height: 9rem;
+    border-radius: 0.5rem;
+    border-color: black;
+    border-width: 0.01rem;
+    border-style: solid;
+    margin: 0.3rem;
+  }
+  
+  .dropdown-links {
+    display: none;
+    position: absolute;
+    /* top: 1rem; */
+    background-color: rgb(255, 255, 255); 
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-links a {
+    display: block;
+    font-family: 'EB Garamond',serif;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 12px 16px;
+    color: rgb(120, 113, 113);
+    text-align: left;
+  }
+
+  .dropdown-links a:hover {
+    color: rgb(53, 49, 49);
+    text-decoration: underline;
+  }
+
+  div#dropdown1:hover .dropdown-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
