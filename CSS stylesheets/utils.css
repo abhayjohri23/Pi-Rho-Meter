@@ -5,14 +5,6 @@ h1 {
     font-style: normal;
 }
 
-/* .centre-links{
-    display: inline;
-    float: left;
-    position: absolute;
-    left: 37%;
-    right: 25%;
-} */
-
 .numberBtn{
     margin: 0.4rem 0.2rem;
     padding: 0.6rem;
@@ -95,7 +87,6 @@ h1 {
   }
 
   #main-icon {
-    float: left;
     color: rgb(149, 149, 149); 
     text-decoration: none; 
     font-size: 30px;
