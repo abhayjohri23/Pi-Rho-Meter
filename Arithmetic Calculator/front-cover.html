@@ -30,22 +30,7 @@
                 <a class="dropbtn nav-links" style="border: none;" href="..\Extras\Resources.pdf" download>Resources</a>
             </div>
             <div style="display: flex; align-items: end;">
-                <button id="contact-btn" class="dropbtn nav-links">Contact Us</button>
-                <div id="popUpBox">
-                    <div id="popUp-Logo">πρmeteR</div>
-                    <embed id="newsletter-img" src="../images/Calculator-amico.svg">
-                    <div style="position: absolute; right: 4%; top: 4%; font-size: 22px;color: gray;">&times;</div>
-                    <div id="newsletter-text">
-                        <h2 style="margin-top:-20%; margin-bottom: 0%; width: 95%">Subscribe to our NewsLetter!</h2>
-                        <p>Subscribe to our newsletter and stay updated!</p>
-                        <input type="text" style="width: 18em; height: 2.5em; border-radius: 1em; border-width: 0.12em;">
-                        <button id="subscribe" class="btn">Subscribe!</button>
-                            <div id="cont-dev">
-                                <h3 style="display: inline; font-size: 16px; padding-right: 8px;">Contact Developer: </h3>
-                                <a href="mailto:abhay.johri0@gmail.com" style="display: inline; text-decoration: none;">Abhay Johri</a>        
-                            </div>
-                    </div>
-                </div>
+                <button id="contact-btn" class="dropbtn nav-links">Connect with us!</button>
                 <button class="dropbtn nav-links">Share it!</button>
                 <button id="printBtn" onclick="window.print()"><iconify-icon icon="mingcute:print-line"></iconify-icon></button>
             </div>
@@ -91,6 +76,24 @@
         </div>
         <script src=".\arithLogic.js"></script>
     </section>
+    <div class="overlay">
+        <div id="popUpBox">
+            <div id="popUp-Logo">πρmeteR</div>
+            <embed id="newsletter-img" src="../images/Calculator-amico.svg">
+            <div style="position: absolute; right: 4%; top: 4%; font-size: 24px;font-weight: 600; color: black;cursor: pointer;">&times;</div>
+            <div id="newsletter-text">
+                <h2 style="margin-top:-20%; margin-bottom: 0%; width: 95%">Subscribe to our NewsLetter!</h2>
+                <p>Subscribe to our newsletter and stay updated!</p>
+                <input type="text" style="padding: 0; width: 18em; height: 2.5em; border-radius: 1em; font-size: 15px; border-width: 0.12em; text-align: center;" autofocus>
+                <button id="subscribe" class="btn">Subscribe</button>
+                <div id="cont-dev">
+                    <h3 style="display: inline; font-size: 16px; font-weight: 400; padding-right: 0px;">Contact Developer: </h3>
+                    <a id="mailID" href="mailto:abhay.johri0@gmail.com">Abhay Johri</a>        
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../modal.js"></script>
     <footer style="display: flex; justify-content: center; position: fixed; bottom: 1rem; left: 39%">
         <a class="footer-links" href="../Extras/Terms of Services.pdf" download>Terms of Service</a>
         <p class="footer-links" style="display: inline;">|</p>
