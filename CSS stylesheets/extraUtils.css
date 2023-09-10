@@ -107,3 +107,33 @@
     background-color: rgba(0,0,0,0.7);
     visibility: hidden;
 }
+
+#icon-container {
+    visibility: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 4em;
+    right:1em;
+    height: fit-content;
+    width: 200px;
+    padding: 5px 5px;
+    background-color: rgba(180, 180, 180, 0.5);
+    border-radius: 15px;
+    border-width: 2px;
+    box-shadow: 3px 3px 1px rgba(168, 153, 153, 0.2);
+    z-index: 1;
+}
+
+.share-btn {
+    background-color: black;
+    font-size: 14.5px;
+    padding: 7px;
+    color: white;
+    border-radius: 50%;
+    border-width: 1px;
+    cursor: pointer;
+}

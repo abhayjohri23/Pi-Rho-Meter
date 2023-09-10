@@ -51,6 +51,7 @@ h1 {
     padding: 0.5rem;
     padding-bottom: 0.4rem;
     overflow: hidden;
+    z-index: 0;
 }
 
 .footer-links{

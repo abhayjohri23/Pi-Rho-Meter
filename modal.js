@@ -1,9 +1,20 @@
 function openPopUp(){
-    let component = document.getElementById('popUpBox');
+    var component = document.getElementById('popUpBox');
     component.parentElement.style.visibility = 'visible';
 }
 
 function closePopUp() {
-    let component = document.getElementById('popUpBox');
+    var component = document.getElementById('popUpBox');
     component.parentElement.style.visibility = 'hidden';
+}
+
+function openShareBox(){
+    var component = document.getElementById('shareBtn');
+    component.nextElementSibling.style.visibility = 'visible';
+}
+
+function closeShareBox(){
+    var component = document.getElementById('shareBtn');
+    component.nextElementSibling.style.visibility = 'hidden';
+    
 }
