@@ -7,8 +7,11 @@ Array.from(buttons).forEach((button)=>{
         var currVal = event.target.innerHTML.toString();
         if(currVal === '='){
             try{
+                let expression = document.getElementById('text-display').value;
                 value = eval(value).toString();
                 document.getElementById('text-display').value = value; 
+                document.getElementById('histTab1').innerHTML = document.getElementById('histTab2').innerHTML;
+                document.getElementById('histTab2').innerHTML = expression + " = " + value;
             }catch(e){
                 console.log('Couldnt evaluate!');
             }
