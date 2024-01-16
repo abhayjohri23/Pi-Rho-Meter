@@ -2,150 +2,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>πρmeteR | World of Calculators</title>
+    <title>πρmeteR | Calculate with Confidence</title>
     <link rel="icon" href="..\images\171352_calculator_icon.png" sizes="16x16">
     <link rel="stylesheet" type="text/css" href="..\CSS stylesheets\utils.css" >
     <link rel="stylesheet" type="text/css" href="..\CSS stylesheets\displayUtils.css" >
 
     <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS stylesheets/extraUtils.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body style="background-color: white; margin: 0%;">
-    <header>
-        <nav id="nav" style="display: flex; justify-content:space-between; overflow: hidden;">
-            <a href="../Arithmetic Calculator/front-cover.html" id="main-icon" style="display: flex; align-items: flex-start;">πρmeteR</a>
+    <header style="position: relative;">
+        <nav id="nav" style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content:space-between; overflow: hidden;">
+            <a href="..\Arithmetic Calculator\front-cover.html" id="main-icon" style="display: flex; align-self: flex-start;">πρmeteR</a>
             <div id="central-buttons" style="display: flex; align-items: center;">
                 <div id="dropdown1" style="display: inline;">
                     <button class="dropbtn nav-links">Math Tools 
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-links">
-                        <a href="../Arithmetic Calculator/front-cover.html">Arithmetic Calculator</a>
-                        <a href="../Trigonomteric calculator\trigo-calc.html">Trigonomtery Calculator</a>
+                        <a href="..\Arithmetic Calculator\front-cover.html">Arithmetic Calculator</a>
+                        <a href="..\Trigonomteric calculator\trigo-calc.html">Trigonomtery Calculator</a>
                     </div>
                 </div>
                 <a class="dropbtn nav-links" style="border: none;" href="..\Extras\Resources.pdf" download>Resources</a>
             </div>
             <div style="display: flex; align-items: end;">
-                <button class="dropbtn nav-links">Contact Us</button>
-                <button class="dropbtn nav-links">Share it!</button>
+                <button id="contact-btn" class="dropbtn nav-links" onclick="openPopUp();">Connect with us!</button>
+                <div id="sharing-container">
+                    <button id="shareBtn" class="dropbtn nav-links" ondblclick="openShareBox()" onclick="closeShareBox()">Share it!</button>
+                    <div id="icon-container" class="iconsContainer">
+                        <button class="share-btn"><i class="fab fa-whatsapp"></i></button>
+                        <button class="share-btn"><i class="fab fa-instagram"></i></button>
+                        <button class="share-btn"><i class="fab fa-twitter"></i></button>
+                        <button class="share-btn"><i class="fab fa-facebook-f"></i></button>
+                        <button class="share-btn"><i class="fab fa-linkedin-in"></i></button>
+                    </div>
+                </div>
                 <button id="printBtn" onclick="window.print()"><iconify-icon icon="mingcute:print-line"></iconify-icon></button>
             </div>
         </nav>
     </header>
-    <div id="tile-container">
-        <div id="sinTile" class="tiles">
-            <section class="input" style="display: flex; ">
-                <label for="text-display" style="font-size: 20px; display: inline-block; width: 2rem; margin: 0.5rem 1.1rem; font-family: 'EB Garamond', serif; color: rgb(127, 135, 142);"> α = </label>
-                <input id="text-display" class="text-admt" type="text">
-                <button class="refresh-button" style="position: relative; top: -4px; left: -4px;">
-                    <span class="material-symbols-outlined">
-                        refresh
-                    </span>
-                </button>
-            </section>
-            <section id="sine" class="output" style="display: flex;">
-                <h3 class="descr">sin α</h3>
-                <label for="descr" class="output-label"></label>
-            </section>
-            <div style="width: fit-content;">
-                <embed src="..\images\Sin_proportional.svg" width="60px" height="60px" style="height: 105px; width: 310px; margin:5px 40px">
+    <section>
+        <div id="tile-container">
+            <div id="sinTile" class="tiles">
+                <section class="input" style="display: flex; ">
+                    <label for="text-display" style="font-size: 20px; display: inline-block; width: 2rem; margin: 0.5rem 1.1rem; font-family: 'EB Garamond', serif; color: rgb(127, 135, 142);"> α = </label>
+                    <input id="text-display" class="text-admt" type="text">
+                    <button class="refresh-button" style="position: relative; top: -4px; left: -4px;">
+                        <span class="material-symbols-outlined">
+                            refresh
+                        </span>
+                    </button>
+                </section>
+                <section id="sine" class="output" style="display: flex;">
+                    <h3 class="descr">sin α</h3>
+                    <label for="descr" class="output-label"></label>
+                </section>
+                <div style="width: fit-content;">
+                    <embed src="..\images\Sin_proportional.svg" width="60px" height="60px" style="height: 105px; width: 310px; margin:5px 40px">
+                </div>
+            </div>
+            <div id="cosTile" class="tiles">
+                <section class="input" style="display: flex; ">
+                    <label for="text-display" style="font-size: 20px; display: inline-block; width: 2rem; margin: 0.5rem 1.1rem; font-family: 'EB Garamond', serif; color: rgb(127, 135, 142);"> α = </label>
+                    <input id="text-display" class="text-admt" type="text">
+                    <button class="refresh-button" style="position: relative; top: -4px; left: -4px;">
+                        <span class="material-symbols-outlined">
+                            refresh
+                        </span>
+                    </button>
+                </section>
+                <section id="cosine" class="output" style="display: flex;">
+                    <h3 class="descr">cos α</h3>
+                    <label for="descr" class="output-label"></label>
+                </section>
+                <div style="width: fit-content;">
+                    <embed src="..\images\Cos_proportional.svg" width="60px" height="60px" style="height: 105px; width: 310px; margin:5px 40px">
+                </div>     
+            </div>
+            <div id="tanTile" class="tiles">
+                <section class="input" style="display: flex; ">
+                    <label for="text-display" style="font-size: 20px; display: inline-block; width: 2rem; margin: 0.5rem 1.1rem; font-family: 'EB Garamond', serif; color: rgb(127, 135, 142);"> α = </label>
+                    <input id="text-display" class="text-admt" type="text">
+                    <button class="refresh-button" style="position: relative; top: -4px; left: -4px;">
+                        <span class="material-symbols-outlined">
+                            refresh
+                        </span>
+                    </button>
+                </section>
+                <section id="tan" class="output" style="display: flex;">
+                    <h3 class="descr">tan α</h3>
+                    <label for="descr" class="output-label"></label>
+                </section>
+                <div style="overflow: hidden;">
+                    <embed src="..\images\Tan_proportional.svg" width="100%" height="100%" style="height: 200px; width: 300px; margin:5px 40px; position: relative; top: -46px;">
+                </div>
+            </div>
+            <div id="cscTile" class="tiles">
+                <section class="input" style="display: flex; ">
+                    <label for="text-display" style="font-size: 20px; display: inline-block; width: 2rem; margin: 0.5rem 1.1rem; font-family: 'EB Garamond', serif; color: rgb(127, 135, 142);"> α = </label>
+                    <input id="text-display" class="text-admt" type="text">
+                    <button class="refresh-button" style="position: relative; top: -4px; left: -4px;">
+                        <span class="material-symbols-outlined">
+                            refresh
+                        </span>
+                    </button>
+                </section>
+                <section id="cosec" class="output" style="display: flex;">
+                    <h3 class="descr">csc α</h3>
+                    <label for="descr" class="output-label"></label>
+                </section>
+                <div style="overflow: hidden;">
+                    <embed src="..\images\Cosec_proportional.svg" width="100%" height="100%" style="height: 200px; width: 300px; margin:5px 40px; position: relative; top: -46px;">
+                </div>
+            </div>
+            <div id="secTile" class="tiles">
+                <section class="input" style="display: flex; ">
+                    <label for="text-display" style="font-size: 20px; display: inline-block; width: 2rem; margin: 0.5rem 1.1rem; font-family: 'EB Garamond', serif; color: rgb(127, 135, 142);"> α = </label>
+                    <input id="text-display" class="text-admt" type="text">
+                    <button class="refresh-button" style="position: relative; top: -4px; left: -4px;">
+                        <span class="material-symbols-outlined">
+                            refresh
+                        </span>
+                    </button>
+                </section>
+                <section id="secant" class="output" style="display: flex;">
+                    <h3 class="descr">sec α</h3>
+                    <label for="descr" class="output-label"></label>
+                </section>
+                <div style="overflow: hidden;">
+                    <embed src="..\images\secant-graph.webp" width="100%" height="100%" style="height: 200px; width: 300px; margin:5px 40px; position: relative; top: -46px;">
+                </div>
+            </div>
+            <div id="cotTile" class="tiles">
+                <section class="input" style="display: flex;">
+                    <label for="text-display" style="font-size: 20px; display: inline-block; width: 2rem; margin: 0.5rem 1.1rem; font-family: 'EB Garamond', serif; color: rgb(127, 135, 142);"> α = </label>
+                    <input id="text-display" class="text-admt" type="text">
+                    <button class="refresh-button" style="position: relative; top: -4px; left: -4px;">
+                        <span class="material-symbols-outlined">
+                            refresh
+                        </span>
+                    </button>
+                </section>
+                <section id="cotan" class="output" style="display: flex;">
+                    <h3 class="descr">cot α</h3>
+                    <label for="descr" class="output-label"></label>
+                </section>
+                <div style="overflow: hidden;">
+                    <embed src="..\images\Cotan_proportional.svg" width="100%" height="100%" style="height: 185px; width: 300px; margin:5px 40px; position: relative; top: -46px;">
+                </div>
             </div>
         </div>
-        <div id="cosTile" class="tiles">
-            <section class="input" style="display: flex; ">
-                <label for="text-display" style="font-size: 20px; display: inline-block; width: 2rem; margin: 0.5rem 1.1rem; font-family: 'EB Garamond', serif; color: rgb(127, 135, 142);"> α = </label>
-                <input id="text-display" class="text-admt" type="text">
-                <button class="refresh-button" style="position: relative; top: -4px; left: -4px;">
-                    <span class="material-symbols-outlined">
-                        refresh
-                    </span>
-                </button>
-            </section>
-            <section id="cosine" class="output" style="display: flex;">
-                <h3 class="descr">cos α</h3>
-                <label for="descr" class="output-label"></label>
-            </section>
-            <div style="width: fit-content;">
-                <embed src="..\images\Cos_proportional.svg" width="60px" height="60px" style="height: 105px; width: 310px; margin:5px 40px">
-            </div>     
-        </div>
-        <div id="tanTile" class="tiles">
-            <section class="input" style="display: flex; ">
-                <label for="text-display" style="font-size: 20px; display: inline-block; width: 2rem; margin: 0.5rem 1.1rem; font-family: 'EB Garamond', serif; color: rgb(127, 135, 142);"> α = </label>
-                <input id="text-display" class="text-admt" type="text">
-                <button class="refresh-button" style="position: relative; top: -4px; left: -4px;">
-                    <span class="material-symbols-outlined">
-                        refresh
-                    </span>
-                </button>
-            </section>
-            <section id="tan" class="output" style="display: flex;">
-                <h3 class="descr">tan α</h3>
-                <label for="descr" class="output-label"></label>
-            </section>
-            <div style="overflow: hidden;">
-                <embed src="..\images\Tan_proportional.svg" width="100%" height="100%" style="height: 200px; width: 300px; margin:5px 40px; position: relative; top: -46px;">
-            </div>
-        </div>
-        <div id="cscTile" class="tiles">
-            <section class="input" style="display: flex; ">
-                <label for="text-display" style="font-size: 20px; display: inline-block; width: 2rem; margin: 0.5rem 1.1rem; font-family: 'EB Garamond', serif; color: rgb(127, 135, 142);"> α = </label>
-                <input id="text-display" class="text-admt" type="text">
-                <button class="refresh-button" style="position: relative; top: -4px; left: -4px;">
-                    <span class="material-symbols-outlined">
-                        refresh
-                    </span>
-                </button>
-            </section>
-            <section id="cosec" class="output" style="display: flex;">
-                <h3 class="descr">csc α</h3>
-                <label for="descr" class="output-label"></label>
-            </section>
-            <div style="overflow: hidden;">
-                <embed src="..\images\Cosec_proportional.svg" width="100%" height="100%" style="height: 200px; width: 300px; margin:5px 40px; position: relative; top: -46px;">
-            </div>
-        </div>
-        <div id="secTile" class="tiles">
-            <section class="input" style="display: flex; ">
-                <label for="text-display" style="font-size: 20px; display: inline-block; width: 2rem; margin: 0.5rem 1.1rem; font-family: 'EB Garamond', serif; color: rgb(127, 135, 142);"> α = </label>
-                <input id="text-display" class="text-admt" type="text">
-                <button class="refresh-button" style="position: relative; top: -4px; left: -4px;">
-                    <span class="material-symbols-outlined">
-                        refresh
-                    </span>
-                </button>
-            </section>
-            <section id="secant" class="output" style="display: flex;">
-                <h3 class="descr">sec α</h3>
-                <label for="descr" class="output-label"></label>
-            </section>
-            <div style="overflow: hidden;">
-                <embed src="..\images\secant-graph.webp" width="100%" height="100%" style="height: 200px; width: 300px; margin:5px 40px; position: relative; top: -46px;">
-            </div>
-        </div>
-        <div id="cotTile" class="tiles">
-            <section class="input" style="display: flex;">
-                <label for="text-display" style="font-size: 20px; display: inline-block; width: 2rem; margin: 0.5rem 1.1rem; font-family: 'EB Garamond', serif; color: rgb(127, 135, 142);"> α = </label>
-                <input id="text-display" class="text-admt" type="text">
-                <button class="refresh-button" style="position: relative; top: -4px; left: -4px;">
-                    <span class="material-symbols-outlined">
-                        refresh
-                    </span>
-                </button>
-            </section>
-            <section id="cotan" class="output" style="display: flex;">
-                <h3 class="descr">cot α</h3>
-                <label for="descr" class="output-label"></label>
-            </section>
-            <div style="overflow: hidden;">
-                <embed src="..\images\Cotan_proportional.svg" width="100%" height="100%" style="height: 185px; width: 300px; margin:5px 40px; position: relative; top: -46px;">
+        <script src=".\trigoLogic.js"></script>
+    </section>
+    <div class="overlay">
+        <div id="popUpBox">
+            <div id="popUp-Logo">πρmeteR</div>
+            <embed id="newsletter-img" src="../images/Calculator-amico.svg">
+            <button style="position: absolute; right: 4%; top: 4%; font-size: 24px;font-weight: 600; color: black;cursor: pointer; outline: none; border: none;" onclick="closePopUp()">&times;</button>
+            <div id="newsletter-text">
+                <h2 style="margin-top:-20%; margin-bottom: 0%; width: 95%">Subscribe to our NewsLetter!</h2>
+                <p>Subscribe to our newsletter and stay updated!</p>
+                <input type="text" style="padding: 0; width: 18em; height: 2.5em; border-radius: 1em; font-size: 15px; border-width: 0.12em; text-align: center;" autofocus>
+                <button id="subscribe" class="btn">Subscribe</button>
+                <div id="cont-dev">
+                    <h3 style="display: inline; font-size: 16px; font-weight: 400; padding-right: 0px;">Contact Developer: </h3>
+                    <a id="mailID" href="mailto:abhay.johri0@gmail.com">Abhay Johri</a>        
+                </div>
             </div>
         </div>
     </div>
-    <script src=".\trigoLogic.js"></script>
+    <script src="../modal.js"></script>
     <footer style="display: flex; justify-content: center; position: fixed; bottom: 1rem; left: 39%">
         <a class="footer-links" href="../Extras/Terms of Services.pdf" download>Terms of Service</a>
         <p class="footer-links" style="display: inline;">|</p>
