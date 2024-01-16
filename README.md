@@ -1,4 +1,4 @@
-**Features of the projec:**
+**Features of the project:**
 1. Pi-Rho-Meter is a static website which implements arithmetic and trigonomteric calculators. Arithmetic caluclator stores the history of last two calculations done.
 2. It is implemented using HTML, CSS and plain javascript for both calculators accessible at two different URLs. 
 3. Implemented Model Box creation for the subscription to Newsletter. 
